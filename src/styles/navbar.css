@@ -1,0 +1,81 @@
+/* Navbar content */
+.navbar-content{
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: var(--bodyColor);
+    color: var(--itemsColor);
+}
+/* LOGO */
+.navbar-content .logo{
+    font-size: 1.5em;
+}
+/* navbar items */
+.navbar-content .items-container{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-content .items-container li a{
+    text-decoration: none;
+    color: var(--itemsColor);
+    margin: 20px;
+    transition: all 0.3s ease-in;
+}
+.navbar-content .items-container li a:hover{
+    color: var(--itemsHover);
+    
+}
+/* hamburger menu  */
+.hamburger-menu{
+    display: none;
+}
+
+/* .Language button */
+.Language-button{
+    border: 2px solid var(--itemsColor);
+    color: var(--itemsColor);
+    border-radius: 5px;
+    font-size: 1em;
+}
+/* ****************RESPONSIVE MAX-W 768PX ****************** */
+@media (max-width: 768px) {
+
+    /* navbar items  RESPONSIVE*/
+.navbar-content .items-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    top: 0;
+    left: -100%;
+    background: var(--itemsHover);
+    transition: all 0.3s ease-in;
+}
+.navbar-content .items-container .active{
+    left: 0;
+}
+/* hamburger menu RESPONSIVE */
+.hamburger-menu .bar{
+    display: block;
+    width: 15px;
+    height: 3px;
+    background: red;
+}
+/* .Language button RESPONSIVE*/
+.Language-button{
+    border: 2px solid var(--itemsColor);
+    color: var(--itemsColor);
+    border-radius: 5px;
+    font-size: 1em;
+}
+}
+
+
+

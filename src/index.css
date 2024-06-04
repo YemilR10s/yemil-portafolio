@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: var(--bodyColor);
+  
+}
+
+:root {
+ 
+  --bodyColor: #1A1A1B;
+  --itemsColor: #EEEEEE;
+  --itemsHover: #eeeeeec2;
+  --mainColor: ;
+  --secondaryColor: ;
+
+}
